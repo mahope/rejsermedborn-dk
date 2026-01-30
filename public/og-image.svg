@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f9ff"/>
+      <stop offset="100%" style="stop-color:#e0f2fe"/>
+    </linearGradient>
+    <linearGradient id="icon-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0284c7"/>
+      <stop offset="100%" style="stop-color:#0369a1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Decorative waves in background -->
+  <g opacity="0.1" fill="none" stroke="#0284c7" stroke-width="3">
+    <path d="M0 200 Q300 100, 600 200 Q900 300, 1200 200"/>
+    <path d="M0 315 Q300 215, 600 315 Q900 415, 1200 315"/>
+    <path d="M0 430 Q300 330, 600 430 Q900 530, 1200 430"/>
+  </g>
+
+  <!-- Logo icon -->
+  <g transform="translate(100, 215)">
+    <rect width="200" height="200" rx="40" fill="url(#icon-bg)"/>
+    <g fill="none" stroke="white" stroke-width="14" stroke-linecap="round" transform="translate(0, 0)">
+      <path d="M50 100 Q75 50, 100 100 Q125 150, 150 100"/>
+      <path d="M50 70 Q75 38, 100 70 Q125 100, 150 70" opacity="0.6"/>
+      <path d="M50 130 Q75 100, 100 130 Q125 162, 150 130" opacity="0.6"/>
+    </g>
+  </g>
+
+  <!-- Text -->
+  <text x="340" y="290" font-family="system-ui, -apple-system, sans-serif" font-size="72" font-weight="700" fill="#0f172a">
+    WhiteNoise<tspan fill="#0284c7">.dk</tspan>
+  </text>
+  <text x="340" y="360" font-family="system-ui, -apple-system, sans-serif" font-size="32" fill="#475569">
+    Din guide til bedre søvn med white noise
+  </text>
+
+  <!-- Features -->
+  <g font-family="system-ui, -apple-system, sans-serif" font-size="22" fill="#64748b">
+    <text x="340" y="450">✓ White noise speakers</text>
+    <text x="640" y="450">✓ Søvnprodukter</text>
+    <text x="900" y="450">✓ Ekspertguides</text>
+  </g>
+
+  <!-- URL -->
+  <text x="100" y="580" font-family="system-ui, -apple-system, sans-serif" font-size="24" fill="#94a3b8">
+    whitenoise.dk
+  </text>
+</svg>

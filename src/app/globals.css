@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+/*
+  Global design baseline:
+  - Calm, readable typography
+  - Consistent link + focus styles
+  - Neutral slate palette
+*/
+
+:root {
+  --background: #f8fafc; /* slate-50 */
+  --foreground: #0f172a; /* slate-900 */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0b1220; /* deep slate */
+    --foreground: #e2e8f0; /* slate-200 */
+  }
+}
+
+@layer base {
+  html {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    line-height: 1.6;
+    font-size: 16px;
+  }
+
+  /* Better default focus style */
+  :focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(14, 165, 233, 0.25); /* sky-500 */
+    border-radius: 8px;
+  }
+
+  /* Subtle selection */
+  ::selection {
+    background: rgba(56, 189, 248, 0.25);
+  }
+
+  /* Default link style (components can override) */
+  a {
+    text-underline-offset: 3px;
+  }
+
+  /* Headings: calmer rhythm */
+  h1,
+  h2,
+  h3 {
+    letter-spacing: -0.02em;
+  }
+}
+
+/* MDX Content styling */
+.mdx-content {
+  line-height: 1.75;
+}
+
+.mdx-content > * + * {
+  margin-top: 1.25em;
+}
+
+/* Prose enhancements */
+.prose h2 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.prose h3 {
+  margin-top: 1.5em;
+  margin-bottom: 0.75em;
+  font-weight: 600;
+  color: #374151;
+}
+
+.prose ul,
+.prose ol {
+  padding-left: 1.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.prose li {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.prose strong {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.prose a {
+  color: #4f46e5;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.prose a:hover {
+  color: #4338ca;
+}
