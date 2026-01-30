@@ -12,8 +12,8 @@ interface PageProps {
 }
 
 export async function generateStaticParams() {
-  // Build subcategory pages from cache
-  const categories = ['white-noise-speakers', 'moerklaegningsgardiner', 'baby-soevn', 'puder', 'wake-up-lights', 'andet'] as const;
+  // Build subcategory pages from cache - use valid ProductCategory values
+  const categories: ProductCategory[] = ['feriedestinationer', 'flyrejser', 'hoteller', 'pakkelister', 'aktiviteter', 'andet'];
   const out: Array<{ kategori: string; underkategori: string }> = [];
 
   for (const c of categories) {
