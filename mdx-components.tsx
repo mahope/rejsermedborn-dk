@@ -1,7 +1,18 @@
 import type { MDXComponents } from 'mdx/types';
+import AffiliateHotel, { AffiliateHotelInline } from '@/components/AffiliateHotel';
+import AffiliateFlight from '@/components/AffiliateFlight';
+import CallToAction, { NewsletterCTA, RelatedCTA, PackingListCTA } from '@/components/CallToAction';
 
 // Eksporter komponenter direkte til brug med MDXRemote
 export const mdxComponents: MDXComponents = {
+    // Affiliate & CTA komponenter
+    AffiliateHotel,
+    AffiliateHotelInline,
+    AffiliateFlight,
+    CallToAction,
+    NewsletterCTA,
+    RelatedCTA,
+    PackingListCTA,
     h1: ({ children }) => (
       <h1 className="text-3xl font-bold mb-6 text-gray-900">{children}</h1>
     ),
