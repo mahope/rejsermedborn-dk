@@ -92,6 +92,25 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* Andre værktøjer */}
+        <div className="border-t border-slate-800 mt-8 pt-8">
+          <h3 className="font-semibold text-white mb-4">🛠️ Andre gratis værktøjer</h3>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 text-sm text-slate-300">
+            <a href="https://gratisfaktura.dk" className="hover:text-emerald-400">📄 Faktura Generator</a>
+            <a href="https://kodeord.dk" className="hover:text-emerald-400">🔐 Kodeord Generator</a>
+            <a href="https://countdowntimer.dk" className="hover:text-emerald-400">⏰ Countdown Timer</a>
+            <a href="https://loenberegner.dk" className="hover:text-emerald-400">💰 Lønberegner</a>
+            <a href="https://minberegner.dk" className="hover:text-emerald-400">🧮 Alle Beregnere</a>
+            <a href="https://ai-tools.dk" className="hover:text-emerald-400">🤖 AI Værktøjer</a>
+            <a href="https://whitenoise.dk" className="hover:text-emerald-400">🔊 White Noise</a>
+            <a href="https://notiondk.dk" className="hover:text-emerald-400">📋 Notion Templates</a>
+            <a href="https://valuta.holstjensen.eu" className="hover:text-emerald-400">💱 Valuta Omregner</a>
+            <a href="https://enheder.holstjensen.eu" className="hover:text-emerald-400">📏 Enheder Omregner</a>
+            <a href="https://citater.holstjensen.eu" className="hover:text-emerald-400">💬 Citater</a>
+            <a href="https://lorem.holstjensen.eu" className="hover:text-emerald-400">📜 Lorem Ipsum</a>
+          </div>
+        </div>
+
         {/* Affiliate disclosure */}
         <div className="border-t border-slate-800 mt-8 pt-8">
           <p className="text-sm text-slate-400 mb-4">
